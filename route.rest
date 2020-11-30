@@ -1,0 +1,63 @@
+GET http://localhost:3000/musichub
+###
+
+GET http://localhost:3000/musichub/5fc420e0c11ea8563c62918a
+
+###
+
+POST http://localhost:3000/musichub
+Content-Type: application/json
+
+{
+    "artist": "Yung Jeff",
+    "album": "My name is",
+    "genre": "rap",
+    "albumRunTime": "420 min"
+}
+
+###
+
+DELETE http://localhost:3000/musichub/5fc4200ec11ea8563c629189
+
+###
+
+PATCH http://localhost:3000/musichub/5fc420e0c11ea8563c62918a
+Content-Type: application/json
+
+{
+    "album": "Brazil big jesus round two"
+}
+
+
+###
+
+GET http://localhost:3000/users/5fc48a1ab8e84031f4e497e5
+
+###
+
+GET http://localhost:3000/users
+
+###
+
+PATCH http://localhost:3000/users/5fc420e0c11ea8563c62918a
+Content-Type: application/json
+
+{
+    "userName": "Brazil Big Booty Bangers"
+}
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "firstName": "Jelena",
+    "lastName": "Hadid",
+    "userName": "JelenaHadid22",
+    "email": "JelenaHadid@test.com"
+}
+
+###
+
+DELETE http://localhost:3000/users/5fc4200ec11ea8563c629189
